@@ -1,0 +1,75 @@
+/* Thiết lập độ rộng của scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Độ rộng của scrollbar */
+  }
+  
+  /* Thiết lập màu nền cho thanh chứa scrollbar */
+  ::-webkit-scrollbar-track {
+    background-color: #121212 /* Màu nền cho track (có thể chỉnh sửa) */
+    
+   
+  }
+ ::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+  }
+
+::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+  }
+  /* Thiết lập màu nền cho thanh cuộn */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(227, 227, 227, 0.296); /* Màu nền cho thumb (có thể chỉnh sửa) */
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(203, 203, 203, 0.581); /* Màu thumb khi hover */
+    border: 2px solid transparent;
+  }
+  :root {
+    --bg-purple: #9742ff;
+  
+    --radius-circle: 50%;
+    --transition-2: 500ms ease;
+  }
+
+  .btn{
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: var(--top, 50%);
+    left: var(--left, 50%);
+    width: 250%;
+    -webkit-padding-after: 250%;
+    padding-block-end: 250%;
+    background-image: linear-gradient(45deg,#FF6F91,#FF9671); 
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    -ms-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 99999px;
+    z-index: -1;
+    -webkit-transition: -webkit-transform var(--transition-2);
+    transition: -webkit-transform var(--transition-2);
+    -o-transition: transform var(--transition-2);
+    transition: transform var(--transition-2);
+    transition: transform var(--transition-2),
+      -webkit-transform var(--transition-2);
+  }
+  
+  .btn:is(:hover, :focus-visible)::before {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+
+  }
+
+.text-animate:hover {
+    background-image: linear-gradient(to right, #30CFD0 0%, #4f1b8f 100%);
+    background-clip: text;
+    transition: color 0.5s ease-in-out;
+}
