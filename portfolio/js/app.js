@@ -12,7 +12,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 /* Otherwise just put the config content (json): */
 
 particlesJS('particles-js',
-  
+
   {
     "particles": {
       "number": {
@@ -55,7 +55,7 @@ particlesJS('particles-js',
         "random": true,
         "anim": {
           "enable": true,
-          "speed":1,
+          "speed": 1,
           "size_min": 0.1,
           "sync": true
         }
@@ -138,19 +138,36 @@ const buttonHoverRipple = function (event) {
 
 addEventOnElements(buttons, "mousemove", buttonHoverRipple);
 
-var splide = new Splide( '.splide', {
-  type     : 'loop',
-  height   : 'fit-content',
-  width    : '90%',
-  focus    : 'center',
-  perPage  : 3,
-  gap : '2rem',
-  classes: {
-		arrows: 'splide__arrows text-black w-20 h-20 bg-transparent',
-		arrow : 'splide__arrow  text-black w-20 h-20 bg-transparent',
-		prev  : 'splide__arrow--prev border-solid border-2 border-black z-20',
-		next  : 'splide__arrow--next border-solid border-2 border-black z-20',
+var splide = new Splide('.splide', {
+  type: 'loop',
+  height: 'fit-content',
+  width: '90%',
+  focus: 'center',
+  perPage: 3,
+  perMove: 1,
+  gap: '2rem',
+  snap: true,
+  pagination: true,
+  breakpoints: {
+   
+    640: {
+      perPage: 1,
+      padding: 0,
+      classes: {
+        arrows: 'splide__arrows text-black w-10 h-10',
+        arrow: 'splide__arrow  text-black w-10 h-10',
+        prev: 'splide__arrow--prev border-solid border-2 border-black z-20 ',
+        next: 'splide__arrow--next border-solid border-2 border-black z-20',
+      },
+    },
+    
   },
-} );
+  classes: {
+    arrows: 'splide__arrows text-black w-20 h-20 ',
+    arrow: 'splide__arrow  text-black w-20 h-20 ',
+    prev: 'splide__arrow--prev border-solid border-2 border-black z-20 bg-white btn',
+    next: 'splide__arrow--next border-solid border-2 border-black z-20  bg-white btn',
+  },
+});
 
 splide.mount();
