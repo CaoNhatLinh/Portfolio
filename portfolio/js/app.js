@@ -140,11 +140,17 @@ addEventOnElements(buttons, "mousemove", buttonHoverRipple);
 
 var splide = new Splide( '.splide', {
   type     : 'loop',
-  height   : '10rem',
-  Width    : '100%',
+  height   : 'fit-content',
+  width    : '90%',
   focus    : 'center',
-  padding: '5rem',
-
+  perPage  : 3,
+  gap : '2rem',
+  classes: {
+		arrows: 'splide__arrows text-black w-20 h-20 bg-transparent',
+		arrow : 'splide__arrow  text-black w-20 h-20 bg-transparent',
+		prev  : 'splide__arrow--prev border-solid border-2 border-black z-20',
+		next  : 'splide__arrow--next border-solid border-2 border-black z-20',
+  },
 } );
 
 splide.mount();

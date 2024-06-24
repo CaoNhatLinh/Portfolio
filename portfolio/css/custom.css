@@ -73,3 +73,25 @@
     background-clip: text;
     transition: color 0.5s ease-in-out;
 }
+
+.arc-gradient {
+  top: 0;
+  right: -10%;
+  width: 120%;
+  height: 110%; /* Chiều cao là nửa chiều rộng để tạo nửa hình tròn */
+  background: #121212; /* Màu nền sẽ là đen */
+  mask-image: radial-gradient(ellipse  at center, 
+                            transparent 30%, 
+                                      #12121262 50%,
+                                      #121212c4 75%, 
+                                      #121212 100%);
+  -webkit-mask-image: radial-gradient(ellipse  at center, 
+                                      transparent 30%, 
+                                      #12121262 50%,
+                                      #121212c4 75%, 
+                                      #121212 100%);
+  mask-position: right center; 
+  -webkit-mask-position: right center;
+  mask-size: 100% 300%; 
+  -webkit-mask-size: 100% 300%;
+}
