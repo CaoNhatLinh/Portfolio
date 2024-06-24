@@ -141,32 +141,20 @@ addEventOnElements(buttons, "mousemove", buttonHoverRipple);
 var splide = new Splide('.splide', {
   type: 'loop',
   height: 'fit-content',
-  width: '90%',
+  width: '80%',
   focus: 'center',
-  perPage: 3,
+  perPage: 1,
   perMove: 1,
+  padding: '20%',
   gap: '2rem',
+  
   snap: true,
   pagination: true,
   breakpoints: {
-   
     640: {
       perPage: 1,
       padding: 0,
-      classes: {
-        arrows: 'splide__arrows text-black w-10 h-10',
-        arrow: 'splide__arrow  text-black w-10 h-10',
-        prev: 'splide__arrow--prev border-solid border-2 border-black z-20 ',
-        next: 'splide__arrow--next border-solid border-2 border-black z-20',
-      },
     },
-    
-  },
-  classes: {
-    arrows: 'splide__arrows text-black w-20 h-20 ',
-    arrow: 'splide__arrow  text-black w-20 h-20 ',
-    prev: 'splide__arrow--prev border-solid border-2 border-black z-20 bg-white btn',
-    next: 'splide__arrow--next border-solid border-2 border-black z-20  bg-white btn',
   },
 });
 
