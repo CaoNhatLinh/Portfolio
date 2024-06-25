@@ -91,6 +91,14 @@
           </ul>
         </div>
         <div class="flex h-fit my-8">
+        <div class="relative shrink m-auto">
+            <div class="bg-transparent text-white focus:outline-none self-baseline font-medium rounded-full border-2 border-white border-solid  hover:text-white text-3xl p-4 text-center inline-flex items-center me-2">
+              <i class="fa-brands fa-github-alt"></i>
+            </div>
+            <a href="#" class="absolute top-[-10%] right-[-60%] origin-center rotate-45 bg-white text-black focus:outline-none self-baseline font-medium rounded-full text-sm px-7 py-6 text-center inline-flex items-center me-2">
+              <i class="fa-solid fa-arrow-up"></i>
+            </a>
+          </div>
           <div class="shrink p-4 border-solid border-2 border-white text-white bg-transparent rounded-3xl group hover:bg-white hover:text-black">
             <h4 class="text-2xl">Back-end</h4>
             <ul class="flex gap-4 mt-4 font-firacode text-white group-hover:text-black flex-wrap">
@@ -99,14 +107,7 @@
               <li>MongoDB</li>
             </ul>
           </div>
-          <div class="relative shrink m-auto">
-            <div class="bg-transparent text-white focus:outline-none self-baseline font-medium rounded-full border-2 border-white border-solid  hover:text-white text-3xl p-4 text-center inline-flex items-center me-2">
-              <i class="fa-brands fa-github-alt"></i>
-            </div>
-            <a href="#" class="absolute top-[-10%] right-[-60%] origin-center rotate-45 bg-white text-black focus:outline-none self-baseline font-medium rounded-full text-sm px-7 py-6 text-center inline-flex items-center me-2">
-              <i class="fa-solid fa-arrow-up"></i>
-            </a>
-          </div>
+          
         </div>
         <div class="h-fit p-4 border-solid border-2 group border-white text-white bg-transparent rounded-3xl hover:bg-white hover:text-black">
           <h4 class="text-2xl">Front-end</h4>
@@ -117,16 +118,17 @@
           </ul>
         </div>
         <div class="flex h-fit my-8">
-          <div class=" w-full shrink m-auto pr-10 line-clamp-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum odit repellendus fugiat iure qui maiores, quod illum quam veritatis quia tenetur culpa laborum tempore debitis ut eveniet explicabo vero neque.</p>
-          </div>
-          <div class="p-4 shrink w-full border-solid border-2 border-white text-white bg-transparent rounded-3xl group hover:bg-white hover:text-black">
+        <div class="p-4 shrink w-full border-solid border-2 border-white text-white bg-transparent rounded-3xl group hover:bg-white hover:text-black">
             <h4 class="text-2xl">DevOps</h4>
             <ul class="flex gap-4 mt-4 font-firacode text-white group-hover:text-black flex-wrap">
               <li>Nginx</li>
               <li>Docker</li>
             </ul>
           </div>
+          <div class=" w-full shrink m-auto pl-10 line-clamp-4 ">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum odit repellendus fugiat iure qui maiores, quod illum quam veritatis quia tenetur culpa laborum tempore debitis ut eveniet explicabo vero neque.</p>
+          </div>
+          
         </div>
 
       </div>
