@@ -10,7 +10,7 @@
   </div>
 
   <div class="relative font-sans smooth-scroll-wrapper">
-    <div class="absolute z-10 w-10/12 translate-x-[-50%] left-1/2">
+    <div class="absolute w-full z-10 grid grid-cols-12">
       @include('component.nav')
       @include($template)
     </div>
