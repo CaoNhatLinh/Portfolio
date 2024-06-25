@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
-    @include('component.head')
+  @include('component.head')
 </head>
 
 <body>
@@ -21,9 +22,7 @@
   <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
-  <script src="./js/scroll.js"></script>
-  <script src="./js/particles.js"></script>
-  <script src="./js/app.js"></script>
+
   @include('component.script')
 </body>
 

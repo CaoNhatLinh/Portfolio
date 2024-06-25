@@ -12,16 +12,20 @@ class HomeController extends Controller
     public function tailwindConfig()
     {
         return $config = [
-            'js' => [],
+            'js' => [
+                'js/scroll.js',
+                'js/particles.js',
+                'js/app.js'
+            ],
             'linkjs_head' => [
                 'https://cdn.tailwindcss.com'
             ],
             'linkjs' => [
-                'https://cdn.tailwindcss.com'
+                'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js',
             ],
             'css' => [
-                '/css/custom.css',
-                '/css/style.css',
+                'css/custom.css',
+                'css/style.css',
                 'font-awesome/css/all.min.css'
             ],
             'linkcss' => ['https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css'],
