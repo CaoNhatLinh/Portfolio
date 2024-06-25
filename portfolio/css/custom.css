@@ -47,7 +47,7 @@
     width: 250%;
     -webkit-padding-after: 250%;
     padding-block-end: 250%;
-    background-image: linear-gradient(45deg,#FF6F91,#FF9671); 
+    background-image: linear-gradient(45deg,#3d5fc6,#e13121); 
     -webkit-transform: translate(-50%, -50%) scale(0);
     -ms-transform: translate(-50%, -50%) scale(0);
     transform: translate(-50%, -50%) scale(0);
@@ -75,21 +75,12 @@
 }
 
 .arc-gradient {
-  top: 0;
-  right: -10%;
-  width: 120%;
-  height: 110%; /* Chiều cao là nửa chiều rộng để tạo nửa hình tròn */
-  background: #121212; /* Màu nền sẽ là đen */
+
+  background: #121212; 
   mask-image: radial-gradient(ellipse  at center, 
-                            transparent 30%, 
-                                      #12121262 50%,
-                                      #121212c4 75%, 
-                                      #121212 100%);
-  -webkit-mask-image: radial-gradient(ellipse  at center, 
-                                      transparent 30%, 
-                                      #12121262 50%,
-                                      #121212c4 75%, 
-                                      #121212 100%);
+  #f50f0f 0%, #4d2d2db3 30%, #4d2d2d2b 50%, #4d2d2d00 65%, #12121200 75%, #00000000 100%);
+  -webkit-mask-image: radial-gradient(ellipse at center,
+  #f50f0f 0%, #4d2d2db3 30%, #4d2d2d2b 50%, #4d2d2d00 65%, #12121200 75%, #00000000 100%);
   mask-position: right center; 
   -webkit-mask-position: right center;
   mask-size: 100% 300%; 
