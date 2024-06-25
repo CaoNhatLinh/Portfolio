@@ -86,8 +86,8 @@
         <div>
         </div>
       </header>
-      <main class="mt-32">
-        <section id="intro">
+      <main class="my-32">
+        <section id="intro mb-32">
           <div class="grid grid-cols-12 gap-4">
             <h2
               class="col-span-8 self-baseline text-white text-9xl text-white content-end tracking-wider font-firacode font-bold">
@@ -103,9 +103,10 @@
                 </button>
               </div>
             </div>
-            <label class="inline-block col-span-5 text-xl  text-gray-light tracking-widest mt-4">My goal is to
+            <p class="col-span-5 text-xl  text-gray-light tracking-widest mt-4 line-clamp-4">My goal is to
               <span class="text-white italic">write maintainable, clean</span> and understandable code to process
-              development was enjoyable.</label>
+              development was enjoyable.
+            </p>
             <h2
               class="col-span-7 self-baseline text-9xl text-white content-end content-start tracking-wider text-end firacode font-bold">
               Developer</h2>
@@ -127,7 +128,7 @@
             <div class="col-span-2"></div>
           </div>
         </section>
-        <section id="projects">
+        <section id="projects" class="py-32">
           <div class="splide__wrapper flex justify-center">
             <div class="splide relative ">
               <div class="splide__arrows splide__arrows--ltr ">
@@ -145,11 +146,12 @@
               <div class="splide__track rounded  arc-gradient">
                 <ul class="splide__list font-firacode ">
                   <li class="splide__slide bg-white rounded-2xl ">
-                    <div class="p-4 relative group">
-                      <img class="rounded-2xl bg-center bg-contain rounded-2xl w-full max-h-60"
+                    <div class="relative group">
+                      <img class="rounded-2xl object-cover rounded-2xl w-full max-h-60"
                         src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTZCSmCzmIPm0up8wmW566cK5w3sSTUChT5UnaU3VnFxrHwoRNSnks0xUBmj2r2oeJk"
                         alt="" />
-                      <div class="absolute transition-opacity transition-transform ease-in-out group-hover:translate-x-0 group-hover:opacity-100 opacity-0 right-0 text-white top-0 translate-x-80 w-2/3 bg-black-light h-full px-12 py-8">
+                      <div
+                        class="absolute transition-opacity transition-transform ease-in-out group-hover:translate-x-0 group-hover:opacity-100 opacity-0 right-0 text-white top-0 translate-x-80 w-2/3 bg-black-light h-full px-12 py-8">
                         <div class="h-1/3">
                           <h3 class="text-2xl font-extrabold">Article title</h3>
                         </div>
@@ -158,16 +160,15 @@
                           ullam!
                         </span>
                         <div class="flex gap-4 w-full h-1/3 mt-6">
-                          <div data-btn class="btn rounded-full px-12 py-4 bg-white text-black font-bold self-baseline">Read more</div>
+                          <div data-btn class="btn rounded-full px-12 py-4 bg-white text-black font-bold self-baseline">
+                            Read more</div>
                           <button type="button" data-btn
                             class="btn bg-white text-black focus:outline-none self-baseline font-medium rounded-full text-sm p-5 text-center inline-flex items-center me-2">
                             <i class="fa-solid fa-arrow-right "></i>
                           </button>
                         </div>
                       </div>
-
                     </div>
-
                   </li>
                 </ul>
                 <div>
@@ -176,22 +177,26 @@
             </div>
           </div>
         </section>
-
-
-
-        <!-- <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Nikita, I'm a full-stack developer with more than 5 years of experience.</p>
-            <div class="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>Front-end: TypeScript, React, Vue, etc.</li>
-                    <li>Back-end: Golang, PostgreSQL, MongoDB, etc.</li>
-                    <li>DevOps: Nginx, Docker, etc.</li>
-                </ul>
+        <section id="about" class="py-32 text-white ">
+          <div class="grid grid-cols-12">
+            <h2 class="col-span-5 font-firacode">.../About me...</h2>
+            <div class="col-span-4 font-sans text-xl text-gray-light">
+              <p class="hyphens-auto indent-6">Hello! I'm Nikita, I'm a <span class="text-white">full-stack developer.</span></p>
+                <p class="hyphens-auto indent-6">with more than <span class="text-white">5 years</span> of
+                  experience.</p>
             </div>
-            <img src="path/to/your/image.jpg" alt="Nikita">
-        </section> -->
+            <div class="col-span-3"></div>
+          </div>
+          <div class="skills grid grid-cols-12 mt-24">
+            <ul class="col-span-6">
+              <li>Front-end: TypeScript, React, Vue, etc.</li>
+              <li>Back-end: Golang, PostgreSQL, MongoDB, etc.</li>
+              <li>DevOps: Nginx, Docker, etc.</li>
+            </ul>
+            <div class="col-span-2"></div>
+            <img class="col-span-4 rounded-3xl object-cover w-full " src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTZCSmCzmIPm0up8wmW566cK5w3sSTUChT5UnaU3VnFxrHwoRNSnks0xUBmj2r2oeJk" alt="Nikita">
+          </div>
+        </section>
         <!-- <section id="experience">
             <h2>Work Experience</h2>
             <ul class="timeline">

@@ -141,11 +141,11 @@ addEventOnElements(buttons, "mousemove", buttonHoverRipple);
 var splide = new Splide('.splide', {
   type: 'loop',
   height: 'fit-content',
-  width: '90%',
+  width: '95%',
   focus: 'center',
   perPage: 1,
   perMove: 1,
-  padding: '30%',
+  padding: '25%',
   gap: '2rem',
   
   snap: true,
