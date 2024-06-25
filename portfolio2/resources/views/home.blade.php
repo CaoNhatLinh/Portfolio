@@ -71,18 +71,20 @@
   </section>
   <section id="about" class="py-32 text-white col-start-2 col-end-12">
     <div class="grid grid-cols-12">
-      <h2 class="col-span-5 font-firacode select-none">.../About me...</h2>
-      <div class="col-span-7 font-sans text-xl text-gray-light">
-        <p class="hyphens-auto indent-6">Hello! I'm <span class="text-bermuda">Cao Nhật Linh</span>, I'm a <span class="text-white">full-stack developer.</span></p>
-        <p class="hyphens-auto indent-6">with more than <span class="text-white">5 years</span> of
+      <h2 class="md:col-span-5 col-span-full font-firacode select-none">.../About me...</h2>
+      <div class="md:col-span-7 col-span-full md:mt-0 mt-4 font-sans text-xl text-gray-light">
+        <p class="hyphens-auto indent-6">Hello! I'm <span class="text-bermuda font-medium">Cao Nhật Linh</span>, I'm a <span class="text-white italic">full-stack developer.</span></p>
+        <p class="hyphens-auto indent-6">with more than <span class="text-white italic">5 years</span> of
           experience.</p>
       </div>
     </div>
     <div class="grid grid-cols-12 mt-24 ">
-      <div class="col-span-6 font-semibold select-none">
+      <img class="md:col-span-4 col-span-full rounded-3xl object-cover w-full " src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTZCSmCzmIPm0up8wmW566cK5w3sSTUChT5UnaU3VnFxrHwoRNSnks0xUBmj2r2oeJk" alt="Nikita">
+      <div class="md:col-span-2"></div>
+      <div class="md:col-span-6 col-span-full font-semibold select-none">
         <div class="h-fit p-4 border-solid border-2 group border-white text-white bg-transparent rounded-3xl hover:bg-white hover:text-black">
           <h4 class="text-2xl">Front-end</h4>
-          <ul class="flex gap-4 mt-4 font-firacode text-white group-hover:text-black">
+          <ul class="flex gap-4 mt-4 font-firacode text-white group-hover:text-black flex-wrap">
             <li>TypeScript</li>
             <li>React</li>
             <li>Vue</li>
@@ -91,7 +93,7 @@
         <div class="flex h-fit my-8">
           <div class="shrink p-4 border-solid border-2 border-white text-white bg-transparent rounded-3xl group hover:bg-white hover:text-black">
             <h4 class="text-2xl">Back-end</h4>
-            <ul class="flex gap-4 mt-4 font-firacode text-white group-hover:text-black">
+            <ul class="flex gap-4 mt-4 font-firacode text-white group-hover:text-black flex-wrap">
               <li>Golang</li>
               <li>PostgreSQL</li>
               <li>MongoDB</li>
@@ -108,7 +110,7 @@
         </div>
         <div class="h-fit p-4 border-solid border-2 group border-white text-white bg-transparent rounded-3xl hover:bg-white hover:text-black">
           <h4 class="text-2xl">Front-end</h4>
-          <ul class="flex gap-4 mt-4 font-firacode text-white group-hover:text-black">
+          <ul class="flex gap-4 mt-4 font-firacode text-white group-hover:text-black flex-wrap">
             <li>TypeScript</li>
             <li>React</li>
             <li>Vue</li>
@@ -120,7 +122,7 @@
           </div>
           <div class="p-4 shrink w-full border-solid border-2 border-white text-white bg-transparent rounded-3xl group hover:bg-white hover:text-black">
             <h4 class="text-2xl">DevOps</h4>
-            <ul class="flex gap-4 mt-4 font-firacode text-white group-hover:text-black">
+            <ul class="flex gap-4 mt-4 font-firacode text-white group-hover:text-black flex-wrap">
               <li>Nginx</li>
               <li>Docker</li>
             </ul>
@@ -128,28 +130,27 @@
         </div>
 
       </div>
-      <div class="col-span-2"></div>
-      <img class="col-span-4 rounded-3xl object-cover w-full " src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTZCSmCzmIPm0up8wmW566cK5w3sSTUChT5UnaU3VnFxrHwoRNSnks0xUBmj2r2oeJk" alt="Nikita">
+      
     </div>
   </section>
-  <section id="experience" class="font-firacode col-start-1 col-end-13">
-    <h2 class="select-none self-baseline text-6xl text-white tracking-wider text-end firacode font-bold content-end ">Work </h2>
-    <table class="table-fixed my-8 border-collapse w-full text-white text-2xl ">
-      <tbody class="align-baseline ">
-        <tr class="border-y border-solid border-white group hover:bg-white hover:text-black">
-          <td class="w-1/5 py-2 content-center ">2022 - <span class="block text-gray-light text-sm text-bermuda group-hover:text-gray-dark">1 year</span></td>
-          <td class="w-2/6 content-center ">ITHUB</td>
-          <td class="w-1/2 content-center ">Frontend developer | React & Vue</td>
-        </tr>
-        <tr class="border-y border-solid border-white group hover:bg-white hover:text-black">
+  <section id="experience" class="font-firacode col-span-full grid grid-cols-12">
+    <h2 class="select-none self-baseline text-6xl text-white tracking-wider text-end firacode font-bold content-end col-end-12">Work</h2>
+    <div class=" my-8 border-collapse text-white text-2xl col-span-full">
+      <div class="border-y border-solid border-white group hover:bg-white hover:text-black w-full flex justify-center">
+        <div class="w-10/12 flex">
+          <div class="w-1/5 py-2 content-center">2022 - <span class="block text-gray-light text-sm text-bermuda group-hover:text-gray-dark">1 year</span></div>
+          <div class="w-2/6 content-center ">ITHUB</div>
+          <div class="w-1/2 content-center ">Frontend developer | React & Vue</div>
+        </div>
+
+      </div>
+      <!-- <div class="border-y border-solid border-white group hover:bg-white hover:text-black">
           <td class="w-1/5 content-center ">2022 - <span class="block text-gray-light text-sm text-bermuda">1 year</span></td>
           <td class="w-2/6 content-center ">ITHUB</td>
           <td class="w-1/2 content-center ">Frontend developer | React & Vue</td>
-        </tr>
-
-      </tbody>
-    </table>
-    <div class="text-lg">
+        </div> -->
+    </div>
+    <div class="text-lg col-end-12">
       <p class="self-baseline text-gray-light tracking-wider text-end  content-end">Work Experience</p>
       <p class="self-baseline text-white tracking-wider text-end  content-end italic ">1 years</p>
     </div>
