@@ -86,3 +86,17 @@
   mask-size: 100% 300%; 
   -webkit-mask-size: 100% 300%;
 }
+
+
+
+.card .border::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: rgba(255, 255, 255, 0);
+  height: 15px;
+  width: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: -5px -5px 0 2px #1b233d;
+}

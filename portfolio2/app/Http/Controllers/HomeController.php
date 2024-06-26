@@ -84,4 +84,15 @@ class HomeController extends Controller
             'title'
         ));
     }
+    public function projects()
+    {
+        $title = "Projects";
+        $config = $this->tailwindConfig();
+        $template = 'projects';
+        return view('layout', compact(
+            'template',
+            'config',
+            'title'
+        ));
+    }
 }

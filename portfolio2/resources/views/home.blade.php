@@ -91,7 +91,7 @@
           </ul>
         </div>
         <div class="flex h-fit my-8">
-        <div class="relative shrink m-auto">
+          <div class="relative shrink m-auto">
             <div class="bg-transparent text-white focus:outline-none self-baseline font-medium rounded-full border-2 border-white border-solid  hover:text-white text-3xl p-4 text-center inline-flex items-center me-2">
               <i class="fa-brands fa-github-alt"></i>
             </div>
@@ -107,7 +107,7 @@
               <li>MongoDB</li>
             </ul>
           </div>
-          
+
         </div>
         <div class="h-fit p-4 border-solid border-2 group border-white text-white bg-transparent rounded-3xl hover:bg-white hover:text-black">
           <h4 class="text-2xl">Front-end</h4>
@@ -118,8 +118,8 @@
           </ul>
         </div>
         <div class="flex h-fit my-8">
-        
-          
+
+
           <div class="p-4 shrink w-full border-solid border-2 border-white text-white bg-transparent rounded-3xl group hover:bg-white hover:text-black">
             <h4 class="text-2xl">DevOps</h4>
             <ul class="flex gap-4 mt-4 font-firacode text-white group-hover:text-black flex-wrap">
@@ -131,9 +131,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum odit repellendus fugiat iure qui maiores, quod illum quam veritatis quia tenetur culpa laborum tempore debitis ut eveniet explicabo vero neque.</p>
           </div>
         </div>
-
       </div>
-      
+
     </div>
   </section>
   <section id="experience" class="font-firacode col-span-full grid grid-cols-12">
@@ -156,6 +155,39 @@
     <div class="text-lg col-end-12">
       <p class="self-baseline text-gray-light tracking-wider text-end  content-end">Work Experience</p>
       <p class="self-baseline text-white tracking-wider text-end  content-end italic ">1 years</p>
+    </div>
+  </section>
+  <section id="projects" class="py-32 text-white col-start-2 col-end-12">
+    <div class="grid grid-cols-12">
+      <h2 class="md:col-start-7 col-span-full font-firacode select-none">.../projects...</h2>
+    </div>
+    <div class="w-full flex mt-24 flex-row gap-8">
+      <div class="basis-2/5 font-semibold select-none px-12">
+        <div class="h-fit p-4 text-white bg-transparent">
+          <h4 class="text-2xl">Goast</h4>
+          <ul class="flex gap-4 py-8 font-firacode text-white flex-wrap ">
+            <li class="px-4 py-2 border-solid border-2 border-white rounded-full">TypeScript</li>
+            <li class="px-4 py-2 border-solid border-2 border-white rounded-full">React</li>
+            <li class="px-4 py-2 border-solid border-2 border-white rounded-full">Vue</li>
+          </ul>
+          <p class="py-8 text-lg items-baseline font-sans font-normal text-gray-light ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus perferendis culpa repellendus voluptatem nisi dolores quia dignissimos autem saepe ex consectetur quod, dicta sit possimus. Totam cum sit magni quae.</p>
+        </div>
+      </div>
+      <div class="basis-3/5 w-full ">
+        <div class="relative  w-2/3 h-full overflow-hidden rounded-2xl bg-black ">
+          <div class="absolute text-white rounded-2xl inset-1  ">
+            <div class="relative size-full ">
+            <img class="object-cover rounded-2xl size-full" src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTZCSmCzmIPm0up8wmW566cK5w3sSTUChT5UnaU3VnFxrHwoRNSnks0xUBmj2r2oeJk" alt="">
+             <div  class="absolute size-5 bg-red z-30 rounded-bl-2xl bottom-[calc(30%-2px)] left-0 shadow-[-6px_6px_0_2px] shadow-black"></div>
+             <div  class="absolute size-5 bg-red z-30 rounded-bl-2xl bottom-0 left-[calc(60%+1px)] shadow-[-6px_6px_0_2px] shadow-black"></div>
+            </div>
+          </div>
+          <div class="absolute w-[60%] h-[30%] bg-black bottom-0 left-0 z-20 pr-4 pt-4 pl-1 rounded-bl-none rounded-l-none rounded-2xl">
+              <div class="size-full bg-white rounded-2xl"></div>
+          </div>
+          
+        </div>
+      </div>
     </div>
   </section>
 </main>
