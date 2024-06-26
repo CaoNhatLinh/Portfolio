@@ -28,7 +28,7 @@
       <div class="col-span-2"></div>
     </div>
   </section>
-  <section id="projects" class="py-32 col-start-2 col-end-12">
+  <section  class="py-32 col-start-2 col-end-12">
     <div class="splide__wrapper flex justify-center">
       <div class="splide relative ">
         <div class="splide__arrows splide__arrows--ltr ">
